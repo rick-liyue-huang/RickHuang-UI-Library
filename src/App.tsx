@@ -1,14 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Hello } from './components/Hello';
+import { useMousePosition } from './hooks/useMousePosition';
 
 function App() {
-  return (
-    <div className="App">
-      <Hello />
-    </div>
-  );
+    const position = useMousePosition();
+    return (
+        <div className="App">
+        <p>{position.x} - {position.y}</p>
+        </div>
+    );
 }
 
 export default App;
