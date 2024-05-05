@@ -7,7 +7,7 @@ function App() {
     const position = useMousePosition();
     return (
         <div className="App">
-        <p>{position.x} - {position.y}</p>
+        <p className='text-3xl font-bold underline'>{position.x} - {position.y}</p>
         </div>
     );
 }
